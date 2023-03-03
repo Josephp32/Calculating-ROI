@@ -35,7 +35,7 @@ class ROI:
             print("Command invalid. Please enter 'change' or 'keep' ")
     
     def calculate_total_invests(self):
-        print( f'Your current total invstment is {self.total_investment}')
+        print( f'Your current total investment is {self.total_investment}')
         change_investment = input("would you like to change or keep your total investment amount? ")
         if change_investment.lower() == 'keep':
             return
@@ -54,6 +54,7 @@ class ROI:
             self.rate_of_return = int(margin)/int(self.total_investment)
         else:
             self.rate_of_return = 0
+        print(f'Your expenses are: ${self.expenses} \nYour income is: ${self.income} \nYour total investment was: ${self.total_investment}')
         print(f"Your current ROI is {self.rate_of_return * 100}%.")
         
         
